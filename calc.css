@@ -1,3 +1,39 @@
-canvas {
-	color: black;
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	color: white;
+}
+.calculator {
+	position: relative;
+	width: 80%;
+	border: 1px solid green;
+    background-color: black;
+	overflow: auto;
+	max-width: 600px;
+	margin: 1.5rem auto;
+}
+.calculator > * {
+	text-align: center;
+    transition: all .25s ease;
+}
+.a1-4 {
+	float:left;
+	width: 25%;
+}
+.a1-4:hover {
+	background: rgba(255,255,255,.25);
+	cursor: pointer;
+}
+.a3-4 {
+	float:left;
+	width: 75%;
+    text-align: right;
+}
+.a1-4, .a3-4 {
+	min-height: 6rem;
+	padding: 3rem;
+	line-height: 0;
+	border: .5px solid green;
 }
